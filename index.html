@@ -1,0 +1,267 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dagmawi Tewodros</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+</head>
+<body>
+
+ <header id="header">
+  <div class="logo .typing" id="logo">Dagmawi.</div>
+        <nav id="nav">
+           <div><a href="#home">Home</a></div> 
+           <div id="lazy"><a href="#about">About</a></div>  
+           <div id="lazy"><a href="#my-service">Service I offer</a></div> 
+           <div><a href="#project-managment">Project Managment</a></div> 
+           <div id="menu"><a href="#My-projects">My works</a><img id="drop-down" onclick="show()" src="images/menu.png"></div> 
+           <div class="contact-me"><a href="#contact-me">Contact me</a></div> 
+           <div class="menu-div" id="menu-div">
+            <div><a href="#about">About</a></div>  
+            <div><a href="#my-service">Service I offer</a></div> 
+            </div>
+        </nav>
+  </header> 
+
+  <div  class="toggle"><img onclick="toggleFun()" id="toggle"  src="images/toggle.png"></div>
+
+<section id="home">
+    <div class = "left-section">
+        <h1> Welcome to my Portfolio.</h1>
+        <p class = "greeting-section"> Hey, there <img  src="images/hello.png">  I'm <span style="font-weight: bold;">Dagmawi</span> , <span id="span" class="span"></span></p>
+        <p class = "info-section">As an aspiring software engineer and  tech entrepreneur, I am creating innovative solutions and improving existing technologies. I specialize in developing efficient and user-friendly web applications. Explore my portfolio to see my journey and projects that reflect my dedication and commitment to excellence in technology.</p>
+        <button class="left-section-button">Download CV</button>
+     </div>
+           <div class = "right-section">
+            <img src="images/personal-image.png">
+            </div>
+</section>
+
+   <section id="about">
+    <div class="left-section-2 animate-on-scroll-1">
+      <img src="images/image-2.png" alt="" srcset="">
+    </div>
+    <div class="right-section-2 slide-in-right">
+            <h1 style="margin-bottom: 2vh;">About <span style="font-family: 'Kanit';
+              font-weight: bold;
+              color: #1e8fff">Me</span></h1>
+            <p>I'm an aspiring software engineer from Ethiopia with a deep passion and curiosity for the world of technology. My dedication, consistency, and perseverance  drive me toward my dreams. I  have secured various awards and grants due to my strengths and adherence to the principle of "working smart not working harder" . 
+              <br>
+              I specialize in creating captivating, user-friendly, and problem solving websites. As an innovative solution maker, I have built some websites that address the current issues.</p>
+              <a href="about.html"  class="read-more">Read-more</a>
+    </div>
+   </section>
+
+
+   <section id="my-service" class="my-service">
+     <h1><span style="color: teal">Services </span><span style="color: lightcoral;">I offer</span> </h1>
+       <div class="div-services">
+              <div >
+                 <img  src="images/web-development.png">
+              <h2>Web Development</h2>
+              <p>
+                I develop websites that look great and function properly on all devices, ensuring  user experience whether audience is on a desktop, tablet, or smartphone.
+              </p>
+              </div>
+              <div>
+                <img  src="images/seo.png">
+              <h2>SEO Optimization</h2>
+              <p>I implement best practices for search engine optimization (SEO) to help website rank higher in search results, attract more visitors, and increase online visibility.</p>
+              </div>
+                <div>
+                 <img   src="images/ul-ux.png">
+                 <h2>UL/UX Designing</h2>
+              <p>I create intuitive and visually appealing user interfaces, ensuring a seamless user experience across all devices and platforms.</p>
+
+
+              </div>
+                <div>
+                 <img   src="images/social-media.png">
+                 <h2>Social Managment</h2>
+              <p>I manage your social media accounts, widening the engagment, disturbance and visibility of your company.</p>
+              </div>
+        </div>
+   </section>
+
+   <section id="project-managment">
+    <h1 style="margin-bottom: 8vh;">Project Management</h1>
+      <div class="div-project-management ">
+            <video id="background-video" autoplay loop muted>
+              <source src="images/airplane.mp4" type="video/mp4">
+              browser does not support the video tag.
+          </video>
+        <div class="rs-pm">
+       <div class="skill-item">
+        <div class="progress-ring" data-percent="95">
+            <svg width="150" height="150">
+                <circle class="background" cx="0" cy="0" r="0"></circle>
+                <circle class="progress" cx="75" cy="75" r="50"></circle>
+            </svg>
+            <div class="progress-text">0%</div>
+        </div>
+        <p>Delivery</p>
+    </div>
+
+    <div class="skill-item">
+        <div class="progress-ring" data-percent="85">
+            <svg width="150" height="150">
+                <circle class="background" cx="0" cy="0" r="0"></circle>
+                <circle class="progress" cx="75" cy="75" r="50"></circle>
+            </svg>
+            <div class="progress-text">0%</div>
+        </div>
+        <p>Quality</p>
+    </div>
+
+    <div class="skill-item">
+        <div class="progress-ring" data-percent="80">
+            <svg width="150" height="150">
+                <circle class="background" cx="0" cy="0" r="0"></circle>
+                <circle class="progress" cx="75" cy="75" r="50"></circle>
+            </svg>
+            <div class="progress-text">0%</div>
+        </div>
+        <p>Minification</p>
+    </div>
+   
+
+  
+  <div id="cardDiv" style="overflow: hidden;">
+    <h2>Fast Website Delivery.</h2>
+    <img src="images/airplane.png" alt="Airplane" class="airplane">
+
+    <p>Need website deployed quickly? I specialize in delivering high-quality websites.</p>
+    
+
+  </div>
+    </div>            
+          </div>
+      <div class="div-project-management div-2-pm">
+            <video id="background-video" autoplay loop muted>
+              <source  src="images/communication.mp4" type="video/mp4">
+              browser does not support the video tag      
+          </video> 
+          <div style="grid-area: b;">
+          <h2>Continuous Communication</h2>
+          <p>To make sure website address needs, we need to communicate continuously throughout the process. I’m here to keep the conversation open and make sure needs addressed properly.</p>
+          <p>Our goal is to maintain clear and consistent communication throughout the project, ensuring you're always informed and involved.</p>
+        </div>
+     </div>
+   </section>
+
+   <section id="My-projects">
+    <p>My works</p>
+    <h1>Explore My projects</h1>
+    <div class="container">
+      <div class="box">
+        <div class="overlay">
+          <h1>Logo + website</h1>
+          <p>Ambaras Hotel </p>
+          <a><img src="images/go-to.png"></a>  
+        </div>
+      </div>
+      <div class="box">
+        <div class="overlay">
+          <h1>Website + logo </h1>
+          <p>Learniverse</p>
+          <a><img src="images/go-to.png"></a>  
+        </div>
+      </div>
+      <div class="box">
+        <div class="overlay">
+          <h1>Website</h1>
+          <p>Ethio-Visionary</p>
+          <a><img src="images/go-to.png"></a>  
+        </div>
+      </div>
+      <div class="box">
+        <div class="overlay">
+          <h1>Website</h1>
+          <p>Note-taking</p>
+          <a><img src="images/go-to.png"></a>                    
+        </div>
+      </div>
+     
+  </div>
+
+
+   </section>
+
+
+   <!-- <section id="testimonial">
+    <p>Testimonial</p>
+    <h1>What Clients Say</h1>
+    <div>
+       <div></div>
+       
+    </div>
+    
+   </section> -->
+   <section id="contact-me">
+    <p>Drop me a line</p>
+    <h1>Get in Touch</h1>
+    <form id="form">
+    <div>
+      <div>
+        <input type="text" id="name" name="name" placeholder="Name" required><br>
+      </div>
+      <div>
+        <input type="text" id="company" name="company" placeholder="Company"><br>
+      </div>
+<div>
+  <input type="email" id="email" name="email" placeholder="Email" required><br>
+</div>   
+<div>   
+  <input type="tel" id="phone" name="phone" placeholder="Phone"><br>
+</div> 
+<div>
+   <label for="">Service</label>
+    <select id="service" name="service">
+      <option value="Website">Website</option>
+      <option value="Social Media Managment">Social media managment</option>
+      <option value="Search Engine Optimization(SEO)">Seach Engine Optimization(SEO)</option>
+    </select>
+  </div>
+  <div>
+      <textarea id="message" name="message" placeholder="Drop a Message" required></textarea><br>
+    </div>
+      <button type="submit" id="button">Send <span></span></button>
+    </div>
+    <div>
+      <div><img src="images/mail.png">&nbsp; dagmawialebachew@gmail.com</div>
+      <div>  <img src="images/phone.png">&nbsp; +251963719303 </div>
+      Whether you have a question about my services, pricing, or anything else feel free to ask
+    </div>    
+  </div>
+  </form>   
+   </section>
+
+   <footer>
+    <div>
+      --------<a href="https://t.me/DagiKylexy"><img src="images/telegram.png"></a>
+      <a href=""><img src="images/linkedin.png"></a>
+      <a href="https://www.instagram.com/dagikylexy/"><img src="images/instagram.png"></a>--------
+    </div>
+    <div>
+      <p>Copyright © 2024 Dagmawi, All rights reserved.</p>
+      <a href="#home"><img src="images/top.png" alt=""> </a>
+    </div>
+   </footer>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+   <script type="text/javascript"
+   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+ <script type="text/javascript">
+   emailjs.init('DPXzDXy_D0kyxQVB2')
+ </script>   
+   <script src="plugins/jquery-2.2.4.min.js"></script>
+   <script src="plugins/jquery.appear.min.js"></script>
+   <script src="plugins/jquery.easypiechart.min.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>

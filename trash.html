@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    body {
+       margin: 0;
+       padding: 0;
+       background-color: black;
+       color: white;
+       overflow: hidden;
+    }
+
+    h1 {
+       animation: delay  3s ease-in-out;
+       transform: translateX(-400px);
+    }
+    p {
+      animation: delay 4s ease-in-out;
+    }
+    section {
+       display: grid;
+       place-items: center;
+       align-content: center;
+       min-height: 100vh;
+    }
+
+    /* @keyframes delay {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    } */
+  </style>
+  
+  <section id="1">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, adipisci sed. Fugit, voluptas! Saepe, corporis ratione quae voluptas dolore dicta recusandae adipisci minus eum quasi maxime amet nesciunt explicabo nulla!</p>
+  </section>
+  
+  <section  class="animate-on-scroll">
+    <h1>He is the section 2</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, adipisci sed. Fugit, voluptas! Saepe, corporis ratione quae voluptas dolore dicta recusandae adipisci minus eum quasi maxime amet nesciunt explicabo nulla!</p>
+  </section>
+  
+  <section class="animate-on-scroll" id="3">
+    <h1>Here is the section 3</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, adipisci sed. Fugit, voluptas! Saepe, corporis ratione quae voluptas dolore dicta recusandae adipisci minus eum quasi maxime amet nesciunt explicabo nulla!</p>
+  </section>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+<script> 
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from('.animate-on-scroll', {
+        scrollTrigger: {
+            trigger: '.animate-on-scroll',
+            start: 'top 80%', // 
+            toggleActions: 'play reverse reverse complete'
+        },
+        opacity: 0,
+        x: 800,
+        duration: 5,
+    });
+</script>
+</body>
+</html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    function findFirstRepeated(gifts) {
+     let giftList = {};
+     let firstRepeatednum = -1;
+     let firstRepeatedIndex = Infinity;
+ 
+     for (let i = 0;i < gifts.length; i++ ) {
+      let gift = gifts[i]
+      if (gift in giftList) {
+         if(i < firstRepeatedIndex) {
+           firstRepeatedIndex = i;
+           firstRepeatednum = gift
+         }
+      }
+      else {
+           giftList[gift] = i;
+         }
+    }
+    
+
+    return firstRepeatednum;
+}
+let toys = [2,1,3,5,3,2]
+ console.log(findFirstRepeated(toys))
+
+  </script>
+</body>
+</html>
